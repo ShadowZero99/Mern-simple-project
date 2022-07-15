@@ -3,6 +3,11 @@ const app = express();
 const mongoose = require("mongoose");
 const UserModel = require("./models/Users");
 
+const cors = require("cors");
+app.use(cors());
+
+app.use(express.json());
+
 mongoose.connect(
   "mongodb+srv://user123:Password123@cluster0.6g1cn.mongodb.net/merntutorial?retryWrites=true&w=majority"
 );
@@ -15,6 +20,13 @@ app.get("/getUsers", (req, res) => {
       res.json(result);
     }
   });
+});
+
+app.post("/createUser", async (req, res) => {
+  const user = req.body;
+  const newUser = new UserModel(user);
+  await newUser.save();
+  res.json(user);
 });
 
 app.listen(3001, () => {
