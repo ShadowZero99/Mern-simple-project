@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background: url(../../mern/f.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .App-logo {
@@ -13,15 +16,9 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+  color: rgb(40, 20, 220);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .App-link {
@@ -35,4 +32,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.forminput {
+  padding: 0.1rem;
+  background: rgb(67, 18, 243);
+
+  border-radius: 2px 2px 2px 2px;
+  color: rgb(67, 18, 243);
+  outline: none;
+  width: 80%;
+  font-size: 1.6rem;
+}
+
+.social-icon {
+  background: var(--light-blue);
+  color: rgb(20, 50, 220);
+  width: 120%;
+  font-weight: 800;
+  text-align: left;
 }
