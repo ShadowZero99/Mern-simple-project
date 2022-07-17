@@ -17,7 +17,7 @@
 }
 
 .title {
-  color: rgb(40, 20, 220);
+  color: rgb(20, 57, 220);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -35,9 +35,8 @@
 }
 
 .forminput {
-  padding: 0.1rem;
+  padding: 0.2rem;
   background: rgb(67, 18, 243);
-
   border-radius: 2px 2px 2px 2px;
   color: rgb(67, 18, 243);
   outline: none;
